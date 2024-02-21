@@ -16,44 +16,44 @@
     (hero-at loc-1-2)
 
     ; Location <> Corridor Connections
-    (corridor-connected loc-3-1 c3132)
-    (corridor-connected loc-3-2 c3132)
+    (corridor-connected c3132 loc-3-1)
+    (corridor-connected c3132 loc-3-2)
 
-    (corridor-connected loc-1-2 c1222)
-    (corridor-connected loc-2-2 c1222)
+    (corridor-connected c1222 loc-1-2)
+    (corridor-connected c1222 loc-2-2)
 
-    (corridor-connected loc-2-2 c2232)
-    (corridor-connected loc-3-2 c2232)
+    (corridor-connected c2232 loc-2-2)
+    (corridor-connected c2232 loc-3-2)
 
-    (corridor-connected loc-3-2 c3242)
-    (corridor-connected loc-4-2 c3242)
+    (corridor-connected c3242 loc-3-2)
+    (corridor-connected c3242 loc-4-2)
     
-    (corridor-connected loc-2-2 c2223)
-    (corridor-connected loc-2-3 c2223)
+    (corridor-connected c2223 loc-2-2)
+    (corridor-connected c2223 loc-2-3)
     
-    (corridor-connected loc-3-2 c3233)
-    (corridor-connected loc-3-3 c3233)
+    (corridor-connected c3233 loc-3-2)
+    (corridor-connected c3233 loc-3-3)
 
-    (corridor-connected loc-2-3 c2333)
-    (corridor-connected loc-3-3 c2333)
+    (corridor-connected c2333 loc-2-3)
+    (corridor-connected c2333 loc-3-3)
 
-    (corridor-connected loc-2-3 c2324)
-    (corridor-connected loc-2-4 c2324)
+    (corridor-connected c2324 loc-2-3)
+    (corridor-connected c2324 loc-2-4)
   
-    (corridor-connected loc-3-3 c3334)
-    (corridor-connected loc-3-4 c3334)
+    (corridor-connected c3334 loc-3-3)
+    (corridor-connected c3334 loc-3-4)
 
-    (corridor-connected loc-2-4 c2434)
-    (corridor-connected loc-3-4 c2434)
+    (corridor-connected c2434 loc-2-4)
+    (corridor-connected c2434 loc-3-4)
 
-    (corridor-connected loc-3-4 c3444)
-    (corridor-connected loc-4-4 c3444)
+    (corridor-connected c3444 loc-3-4)
+    (corridor-connected c3444 loc-4-4)
 
     ; Key locations
-    (key-at loc-2-2)
-    (key-at loc-2-4)
-    (key-at loc-4-4)
-    (key-at loc-4-2)
+    (key-at loc-2-2 key1)
+    (key-at loc-2-4 key2)
+    (key-at loc-4-4 key4)
+    (key-at loc-4-2 key3)
     
     ; Locked corridors
     (corridor-locked c3132)
@@ -89,6 +89,7 @@
     (key-has-one-use key4)
 
   )
+  
   (:goal
     (hero-at loc-3-1)
   )
